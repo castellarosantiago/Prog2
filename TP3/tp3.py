@@ -169,7 +169,7 @@ def menu():
         print("9. Ejercicio 9")
         print("0. Salir")
 
-        opcion = leerentero("Selecciona una opción (0-9): ")
+        opcion = leerentero("Selecciona una opción (0-10): ")
 
         if opcion == 1:
             ejercicio1()

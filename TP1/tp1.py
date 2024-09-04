@@ -247,7 +247,7 @@ def menu():
         print("16. Ejercicio 16")
         print("0. Salir")
 
-        opcion = leer_entero("Selecciona una opción (0-9): ")
+        opcion = leer_entero("Selecciona una opción (0-16): ")
 
         if opcion == 1:
             ejercicio1()
@@ -265,6 +265,20 @@ def menu():
             ejercicio8()
         elif opcion == 9:
             ejercicio9()
+        elif opcion == 10:
+            ejercicio10()
+        elif opcion == 11:
+            ejercicio11()
+        elif opcion == 12:
+            ejercicio12()
+        elif opcion == 13:
+            ejercicio13()
+        elif opcion == 14:
+            ejercicio14()
+        elif opcion == 15:
+            ejercicio15()
+        elif opcion == 16:
+            ejercicio16()
         elif opcion == 0:
             print("Saliendo del programa...")
             break
