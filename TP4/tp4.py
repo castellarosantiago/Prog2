@@ -49,15 +49,18 @@ class Vinoteca:
         pass
 
     def reponerVinosBlancos(self, cantBlancos):
-        
+        if self.__cantBlancos + cantBlancos <= self.capacidadMaxima:
+            self.__cantBlancos += cantBlancos
         pass
 
     def reponerVinosTintoJoven(self, cantTintosJovenes):
-        
+        if self.__cantTintosJovenes + cantTintosJovenes <= self.capacidadMaxima:
+            self.__cantTintosJovenes += cantTintosJovenes
         pass
 
     def reponerVinosTintoAnejado(self, cantTintosAnejados):
-        
+        if self.__cantTintosAnejados + cantTintosAnejados <= self.capacidadMaxima:
+            self.__cantTintosAnejados += cantTintosAnejados
         pass
 
     def venderVinosBlancos(self, cantBlancos):
