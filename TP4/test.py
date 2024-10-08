@@ -106,7 +106,11 @@ def testEj3():
         else:
             print("Opción inválida. Intente nuevamente.")
 
+def testEj4():
+    pass#TODO
+
 if __name__ == "__main__":
     #testEj2()
     #alternateTestEj2()
-    testEj3()
+    #testEj3()
+    pass

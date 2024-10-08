@@ -101,4 +101,66 @@ class Vinoteca:
     def obtenerCantidadVinosTintosAnejados(self):
         return self.__cantTintosAnejados
 
+class Automovil:
+    ##atributos de instancia
+    marca = ""
+    modelo = ""
+    velocidadMaxima = float
+    velocidadActual = float
+
+    ##constructor
+    def __init__(self, marca:str, modelo:str, anno:int, velocidadMaxima:float, velocidadActual:float):
+        self.__marca = marca
+        self.__modelo = modelo
+        self.__anno = anno
+        self.__velocidadMaxima = velocidadMaxima
+        self.__velocidadActual = velocidadActual
+
+    ##comandos
+    def establecerMarca(self, marca):
+        self.__marca = marca
+
+    def establecerModelo(self, modelo):
+        self.__modelo = modelo
+
+    def establecerVelocidadMaxima(self, velocidadMaxima):
+        self.__velocidadMaxima = velocidadMaxima
+
+    def establecerVelocidadActual(self, velocidadActual):
+        self.__velocidadActual = velocidadActual
+
+    def acelerar(self, velocidadActual, velocidadMaxima):
+        if self.__velocidadActual <= self.__velocidadMaxima:
+            velocidadActual += velocidadMaxima
+
+    def desacelerar(self, velocidadActual):
+        if self.__velocidadActual > 0:
+            velocidadActual -= velocidadActual
+
+    def frenarPorCompleto(self, velocidadActual):
+        if self.__velocidadActual > 0:
+            velocidadActual = 0
+
+
+    ##consultas
+
+    def obtenerMarca(self):
+        return self.__marca
+
+    def obternerModelo(self):
+        return self.__modelo
+    
+    def obtenerAnno(self):
+        return self.__anno
+    
+    def obtenerVelocidadMaxima(self):
+        return self.__velocidadMaxima
+    
+    def obtenerVelocidadActual(self):
+        return self.__velocidadActual
+    
+    def calcularMinutosParaLlegar(self, distanciaKM:float, tiempoParaLlegar:int):
+        distanciaKM = 0
+        tiempoParaLlegar = 0
         
+        pass
