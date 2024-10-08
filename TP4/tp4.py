@@ -46,48 +46,59 @@ class Vinoteca:
     def reponerJugos(self, cantJugos):
         if self.__cantJugos + cantJugos <= self.capacidadMaxima:
             self.__cantJugos += cantJugos
-        pass
+        
 
     def reponerVinosBlancos(self, cantBlancos):
         if self.__cantBlancos + cantBlancos <= self.capacidadMaxima:
             self.__cantBlancos += cantBlancos
-        pass
+        
 
-    def reponerVinosTintoJoven(self, cantTintosJovenes):
+    def reponerVinosTintoJovenes(self, cantTintosJovenes):
         if self.__cantTintosJovenes + cantTintosJovenes <= self.capacidadMaxima:
             self.__cantTintosJovenes += cantTintosJovenes
-        pass
+        
 
-    def reponerVinosTintoAnejado(self, cantTintosAnejados):
+    def reponerVinosTintoAnejados(self, cantTintosAnejados):
         if self.__cantTintosAnejados + cantTintosAnejados <= self.capacidadMaxima:
             self.__cantTintosAnejados += cantTintosAnejados
-        pass
+        
+
+    def venderJugos(self, cantJugos):
+
+        if cantJugos <= self.__cantJugos:
+            self.__cantJugos -= cantJugos
 
     def venderVinosBlancos(self, cantBlancos):
+        if cantBlancos <= self.__cantBlancos:
+            self.__cantBlancos -= cantBlancos
         
-        pass
 
     def venderVinosTintoJoven(self, cantTintosJovenes):
-
-        pass
+        if cantTintosJovenes <= self.__cantTintosJovenes:
+            self.__cantTintosJovenes -= cantTintosJovenes
+        
 
     def venderVinosTintoAnejado(self, cantTintosAnejados):
-
-        pass
+        if cantTintosAnejados <= self.__cantTintosAnejados:
+            self.__cantTintosAnejados -= cantTintosAnejados
+        
 
     ##consutlas - metodos getters
 
-    def obtenerCantJugos():
+    def obtenerCantJugos(self):
+        return self.__cantJugos
+        
+    def obtenerCantidadVinosBlancos(self):
+        return self.__cantBlancos
 
-        pass
-    def obtenerCantidadVinosBlancos():
+        
 
-        pass
+    def obtenerCantitdadVinosTintosJovenes(self):
+        return self.__cantTintosJovenes
 
-    def obtenerCantitdadVinosTintosJovenes():
+        
 
-        pass
+    def obtenerCantidadVinosTintosAnejados(self):
+        return self.__cantTintosAnejados
 
-    def obtenerCantidadVinosTintosAnejados():
-
-        pass
+        
