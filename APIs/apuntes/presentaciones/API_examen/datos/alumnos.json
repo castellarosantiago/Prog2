@@ -1,0 +1,29 @@
+{
+    "ultimoID": 12,
+    "alumnos": [
+        {
+            "id": 3,
+            "legajo": 1232,
+            "nombre": "bart",
+            "apellido": "Simpson"
+        },
+        {
+            "id": 6,
+            "legajo": 123,
+            "nombre": "homero",
+            "apellido": "Simpson"
+        },
+        {
+            "id": 7,
+            "legajo": 1123,
+            "nombre": "homero",
+            "apellido": "Simpson"
+        },
+        {
+            "id": 8,
+            "legajo": 116,
+            "nombre": "Ned",
+            "apellido": "Flanders"
+        }
+    ]
+}
